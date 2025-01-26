@@ -48,7 +48,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: messaging_app
+      POSTGRES_DB: postgres
       POSTGRES_SSL_MODE: require
     ports:
       - "5432:5432"
@@ -81,7 +81,7 @@ services:
       KAFKA_GROUP: persistence-group
       KAFKA_TOPIC_CONSUMER: chat
       KAFKA_TOPIC_PRODUCER: notification
-      DSN: postgres://root:root@postgres:5432/messaging_app
+      DSN: postgres://root:root@postgres:5432/postgres
     ports:
       - "8002:8002"
     depends_on:

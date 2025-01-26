@@ -54,3 +54,6 @@ The application will be available at `http://localhost:8004`
 # Create SSL Certificate
 Please create ssl certificates
 `openssl req -x509 -newkey rsa:2048 -nodes -keyout certs/server.key -out certs/server.crt -days 365`
+
+Change the permission
+`chmod 600 certs/server.key`
