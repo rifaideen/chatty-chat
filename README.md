@@ -50,3 +50,7 @@ The application will be available at `http://localhost:8004`
 1. **Login:** credentials `admin` and `admin`
 2. **Pull:** navigate to `Models` page and pull any model
 3. **Chat:** chat with AI
+
+# Create SSL Certificate
+Please create ssl certificates
+`openssl req -x509 -newkey rsa:2048 -nodes -keyout certs/server.key -out certs/server.crt -days 365`
